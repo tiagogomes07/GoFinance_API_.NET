@@ -171,7 +171,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801312212242_InitialCreate.cs" />
+    <Compile Include="Migrations\201801312212242_InitialCreate.Designer.cs">
+      <DependentUpon>201801312212242_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802070200341_novamodelagem.cs" />
+    <Compile Include="Migrations\201802070200341_novamodelagem.Designer.cs">
+      <DependentUpon>201802070200341_novamodelagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802070204513_novamodelagem1.cs" />
+    <Compile Include="Migrations\201802070204513_novamodelagem1.Designer.cs">
+      <DependentUpon>201802070204513_novamodelagem1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802070210243_novamodelagem3.cs" />
+    <Compile Include="Migrations\201802070210243_novamodelagem3.Designer.cs">
+      <DependentUpon>201802070210243_novamodelagem3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Conta.cs" />
     <Compile Include="Models\Lancamento.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Recurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +249,20 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801312212242_InitialCreate.resx">
+      <DependentUpon>201801312212242_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070200341_novamodelagem.resx">
+      <DependentUpon>201802070200341_novamodelagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070204513_novamodelagem1.resx">
+      <DependentUpon>201802070204513_novamodelagem1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070210243_novamodelagem3.resx">
+      <DependentUpon>201802070210243_novamodelagem3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
