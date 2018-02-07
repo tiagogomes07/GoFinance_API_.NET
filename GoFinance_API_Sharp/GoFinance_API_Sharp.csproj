@@ -187,6 +187,14 @@
     <Compile Include="Migrations\201802070210243_novamodelagem3.Designer.cs">
       <DependentUpon>201802070210243_novamodelagem3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802070226438_novamodelagem4.cs" />
+    <Compile Include="Migrations\201802070226438_novamodelagem4.Designer.cs">
+      <DependentUpon>201802070226438_novamodelagem4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802070227497_novamodelagem5.cs" />
+    <Compile Include="Migrations\201802070227497_novamodelagem5.Designer.cs">
+      <DependentUpon>201802070227497_novamodelagem5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Conta.cs" />
     <Compile Include="Models\Lancamento.cs" />
@@ -262,6 +270,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802070210243_novamodelagem3.resx">
       <DependentUpon>201802070210243_novamodelagem3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070226438_novamodelagem4.resx">
+      <DependentUpon>201802070226438_novamodelagem4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070227497_novamodelagem5.resx">
+      <DependentUpon>201802070227497_novamodelagem5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
