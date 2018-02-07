@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFinance_API_Sharp", "GoFinance_API_Sharp\GoFinance_API_Sharp.csproj", "{19D293F5-C96D-4D56-8B75-D7D9450288CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19D293F5-C96D-4D56-8B75-D7D9450288CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D293F5-C96D-4D56-8B75-D7D9450288CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D293F5-C96D-4D56-8B75-D7D9450288CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D293F5-C96D-4D56-8B75-D7D9450288CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDC5DFBB-4192-4631-9206-1BEEBD74C7CD}
+	EndGlobalSection
+EndGlobal
