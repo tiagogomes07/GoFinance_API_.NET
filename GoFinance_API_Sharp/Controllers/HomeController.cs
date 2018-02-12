@@ -13,7 +13,8 @@ namespace GoFinance_API_Sharp.Controllers
         public ActionResult Index()
         {
 
-            //var ctx = new Contexto();
+            var ctx = new Contexto();
+            //ctx.Database.CreateIfNotExists();
             //var r = new Random();
             //var listaDespesas = new List<string>()
             //{
@@ -24,16 +25,17 @@ namespace GoFinance_API_Sharp.Controllers
             //    "Gas",
             //    "Aluguel",
             //    "Condominio",
-            //    "Lazer"
+            //    "Lazer",
+            //    "Mercado",
             //};
 
-            //for (int i = 0; i < 1000; i++)
+            //for (int i = 0; i < 50; i++)
             //{
             //    var lanc = new Lancamento();
             //    lanc.Data = RandomDayFunc();
             //    lanc.Valor = r.Next(1, 2500);
             //    lanc.TipoDC = 0;
-            //    lanc.Descrição = listaDespesas.PickRandom();
+            //    lanc.Descricao = listaDespesas.PickRandom();
 
             //    ctx.Lancamento.Add(lanc);
             //}

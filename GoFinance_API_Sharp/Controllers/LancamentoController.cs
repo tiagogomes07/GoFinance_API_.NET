@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Http.Results;
 
 namespace GoFinance_API_Sharp.Controllers
 {
@@ -19,9 +20,10 @@ namespace GoFinance_API_Sharp.Controllers
  
         [Route("Lancamento/GetLancamentos")]
         [HttpGet]
-        public IEnumerable<Lancamento> GetLancamentos()
+        public IHttpActionResult GetLancamentos()
         {
-            return (ctx.Lancamento.ToList());
+            var lanc = ctx.Lancamento.ToList();
+            return Ok(lanc);
         }
 
         
@@ -30,7 +32,9 @@ namespace GoFinance_API_Sharp.Controllers
         public IEnumerable<Lancamento> GetRangeDatasAnalitico(DateTime dtInicial, DateTime dtFinal)
         {
 
-            return (ctx.Lancamento.Where( x=> x.Data >= DbFunctions.TruncateTime(dtInicial) && x.Data <= DbFunctions.TruncateTime(dtFinal) ).ToList());
+            return (ctx.Lancamento.Where( x=> 
+                x.Data >= DbFunctions.TruncateTime(dtInicial) && x.Data <= DbFunctions.TruncateTime(dtFinal)             
+            ).ToList());
         }
 
 
@@ -41,7 +45,7 @@ namespace GoFinance_API_Sharp.Controllers
         {
 
             var query = (from l in ctx.Lancamento
-                         where l.Data >= DbFunctions.TruncateTime(dtInicial) && l.Data <= DbFunctions.TruncateTime(dtFinal)
+                         where ( l.Data >=  DbFunctions.TruncateTime(dtInicial)  && l.Data <= DbFunctions.TruncateTime(dtFinal) )
                          group l by new { l.Descricao} into g
                          select new
                          {   Descricao = g.Key.Descricao,

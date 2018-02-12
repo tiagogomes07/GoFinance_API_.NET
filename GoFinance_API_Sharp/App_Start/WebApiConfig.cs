@@ -14,6 +14,10 @@ namespace GoFinance_API_Sharp
             var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
 
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
